@@ -6,7 +6,7 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('dockerhub-token')
-    APP_NAME = "/amazonclone"
+    APP_NAME = "jhude51/amazonclone"
     }
     stages { 
         stage('SCM Checkout') {
