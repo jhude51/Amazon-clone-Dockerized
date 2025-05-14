@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Trivy Scan (Aqua)') {
             steps {
-                sh 'trivy --timeout 10m --scanners vuln image $APP_NAME:$BUILD_NUMBER'
+                sh 'trivy --scanners vuln image $APP_NAME:$BUILD_NUMBER'
             }
        }
         stage('push image') {
